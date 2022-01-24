@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8229fd03a3d386e4f0607c66c39de5b",
+    "revision": "299bd136a82e24e80fbc5ac9a5b80378",
     "url": "/gsap-website-practice/index.html"
   },
   {
-    "revision": "f15a10fa474a3a3bdc36",
+    "revision": "d492f74c35fd88d87c3a",
     "url": "/gsap-website-practice/static/css/main.c6a82108.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gsap-website-practice/static/js/2.7aadb8e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f15a10fa474a3a3bdc36",
-    "url": "/gsap-website-practice/static/js/main.43339f9b.chunk.js"
+    "revision": "d492f74c35fd88d87c3a",
+    "url": "/gsap-website-practice/static/js/main.21ff51bf.chunk.js"
   },
   {
     "revision": "b5ffcfc8284a221dff41",
