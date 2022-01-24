@@ -69,7 +69,7 @@
                     width: 100vw;
                 }
                 @include media("<=phone") {
-                    width: 16px;
+                    padding: 16px;
                 }
 
                 span {
@@ -104,7 +104,6 @@
                         line-height: 2.2rem;
                         margin-top: 8px;
                     }
-
                 }
             }
             .case-image {
@@ -115,7 +114,7 @@
                 overflow: hidden;
                 position: absolute;
                 opacity: 0.45;
-                transition: .4s cubic-bezier(.6, -0.05, .1, .99);
+                transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
 
                 img {
                     width: 100%;
