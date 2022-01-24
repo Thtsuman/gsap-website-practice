@@ -1,10 +1,11 @@
 import React from "react";
 import "./styles/App.scss";
+import Headers from './components/Headers/Headers'
 
 function App() {
   return (
     <div className='App'>
-      <h2>Hello this is your starter files </h2>
+      <Headers />
     </div>
   );
 }
