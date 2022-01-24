@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gsap-website-practice/static/css/main.c6a82108.chunk.css",
+    "main.js": "/gsap-website-practice/static/js/main.43339f9b.chunk.js",
+    "main.js.map": "/gsap-website-practice/static/js/main.43339f9b.chunk.js.map",
+    "runtime-main.js": "/gsap-website-practice/static/js/runtime-main.c16f3ddd.js",
+    "runtime-main.js.map": "/gsap-website-practice/static/js/runtime-main.c16f3ddd.js.map",
+    "static/js/2.7aadb8e4.chunk.js": "/gsap-website-practice/static/js/2.7aadb8e4.chunk.js",
+    "static/js/2.7aadb8e4.chunk.js.map": "/gsap-website-practice/static/js/2.7aadb8e4.chunk.js.map",
+    "index.html": "/gsap-website-practice/index.html",
+    "precache-manifest.31b9bc39103a4ef996b39101cca05053.js": "/gsap-website-practice/precache-manifest.31b9bc39103a4ef996b39101cca05053.js",
+    "service-worker.js": "/gsap-website-practice/service-worker.js",
+    "static/css/main.c6a82108.chunk.css.map": "/gsap-website-practice/static/css/main.c6a82108.chunk.css.map",
+    "static/js/2.7aadb8e4.chunk.js.LICENSE.txt": "/gsap-website-practice/static/js/2.7aadb8e4.chunk.js.LICENSE.txt",
+    "static/media/arrow-left.f9a44e1c.svg": "/gsap-website-practice/static/media/arrow-left.f9a44e1c.svg",
+    "static/media/arrow-right.dc372a07.svg": "/gsap-website-practice/static/media/arrow-right.dc372a07.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c16f3ddd.js",
+    "static/js/2.7aadb8e4.chunk.js",
+    "static/css/main.c6a82108.chunk.css",
+    "static/js/main.43339f9b.chunk.js"
+  ]
+}
