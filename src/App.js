@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/App.scss";
 import Headers from './components/Headers/Headers'
 import Banner from './components/Banner/Banner'
+import Cases from "./components/Cases/Cases";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <div className='App'>
       <Headers />
       <Banner />
+      <Cases />
     </div>
   );
 }

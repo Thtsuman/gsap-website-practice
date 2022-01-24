@@ -4,9 +4,9 @@ import { ReactComponent as ArrowRight } from './arrow-right.svg';
 const images = {
     ArrowLeft, 
     ArrowRight,
-    dummyImg1: '/images/curology-min.png',
-    dummyImg2: "/images/lumin-min.png",
-    dummyImg3: '/images/yourspace-min.png'  
+    curologyImg: '/images/curology-min.png',
+    luminImg: "/images/lumin-min.png",
+    yourspaceImg: '/images/yourspace-min.png'  
 }
 
 const assets = {
