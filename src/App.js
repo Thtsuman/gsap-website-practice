@@ -3,6 +3,7 @@ import "./styles/App.scss";
 import Headers from './components/Headers/Headers'
 import Banner from './components/Banner/Banner'
 import Cases from "./components/Cases/Cases";
+import IntroOverlay from './components/IntroOverlay/IntroOverlay'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className='App'>
+      <IntroOverlay />
       <Headers />
       <Banner />
       <Cases />
