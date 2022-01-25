@@ -4,7 +4,7 @@ import Approaches from './Approaches/Approaches'
 import Services from './Services/Services'
 import CaseStudies from './CaseStudies/CaseStudies'
 
-const routes = {
+const pages = {
     Home,
     About,
     Approaches,
@@ -12,4 +12,4 @@ const routes = {
     CaseStudies
 }
 
-export default routes;
+export default pages;

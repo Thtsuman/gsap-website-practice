@@ -2,38 +2,61 @@ import React from "react";
 import "./styles/App.scss";
 import Headers from './components/Headers/Headers'
 import gsap from 'gsap'
-import pages from './pages/index'
+import routes from './routes'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation/Navigation";
 
-const routes = [
-  { path: '/', name: 'Home', component: pages.Home },
-  { path: '/case-studies', name: 'Case Studies', component: pages.CaseStudies },
-  { path: '/approach', name: 'Approach', component: pages.Approaches },
-  { path: '/about-us', name: 'About Us', component: pages.About },
-  { path: '/services', name: 'Services', component: pages.Services },
-]
+const debounce = (fn, ms) => {
+  let timer;
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, arguments)
+    }, ms)
+  }
+}
 
-function App() {
+const App = () => {
+
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
 
   React.useEffect(() => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
+    const vh = dimensions.height * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);  
     // to clear out flash
     gsap.to("body", 0, { css: { visibility: 'visible' } });
-  }, [])
+
+    // to listen on change view port
+    const debouncedHandleResize = debounce(() => {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }, 1000)
+
+    window.addEventListener('resize', debouncedHandleResize)
+    
+    return () => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+  }, [dimensions.height, dimensions.innerHeight])
 
   return (
-    <div className='App'>
+    <div>
       <Router>
-          <Headers />
-          <div>
-            <Routes>
-              {routes.map(route => (
-                <Route key={route.name} path={route.path} element={<route.component />} />
-              ))}
-            </Routes>
-          </div>
+        <Headers />
+        <div className='App'>
+          <Routes>
+            {Object.values(routes).map(route => (
+              <Route key={route.name} path={route.path} element={<route.component />} />
+            ))}
+          </Routes>
+        </div>
+        <Navigation />
       </Router>
     </div>
   );
