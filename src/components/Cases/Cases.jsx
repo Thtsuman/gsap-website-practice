@@ -1,5 +1,6 @@
 import React from 'react';
 import assets from '../../assets/assets'
+import gsap from 'gsap'
 
 const caseStudies = [
     {
@@ -23,6 +24,19 @@ const caseStudies = [
 const Cases = () => {
 
     const { ArrowLeft, ArrowRight } = assets.images
+
+    React.useEffect(() => {
+        casesHoverAnimation()
+    }, [])
+
+    const casesHoverAnimation = () => {
+        gsap.from('.case-image img', 0.6, {
+            // scale: 1.4,
+            // ease: "expo.inOut",
+            // delay: -2,
+            // stagger: 0.4
+        })
+    }
 
     return (
         <div className="cases">
